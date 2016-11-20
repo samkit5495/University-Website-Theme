@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript" language="javascript">
+
+function mypopup()
+ {
+ window.print();
+ document.getElementById("btnPrint").style.visibility = "hidden";
+
+ //javascript:history.go(-1);
+//   window.open ("PrintReceipt.aspx?recptno="+challan+"&D=Y","mywindow","location=1,status=1,scrollbars=1,width=700,height=600");
+  return false;
+ } 
+
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+a:link {
+	color: #FF0000;
+}
+a:visited {
+	color: #FF0000;
+}
+a:hover {
+	color: #6600CC;
+}
+body {
+	background-image: url(../Images/Untitled3.gif);
+}
+-->
+</style></head>
+
+<body>
+<div align="center">
+  <h1>Challan Form</h1>
+  <p><img src="../Images/challan.JPG" width="900" height="800" /></p>
+<center>  <p>To Save This Image <a href="../Images/Challan.docx">Click Here</a>.</p></center>
+ <form name="form1" method="post" id="form1">
+
+<center><input name="btnPrint" value="Print" onClick="mypopup(); return false;" id="btnPrint" style="width: 93px;" type="submit"></center>
+  <p>&nbsp;</p>
+</body>
+</html>
